@@ -141,3 +141,14 @@ As a developer, you'll be a lifelong learner and constantly encountering new thi
 //     }
 //     else console.log("Love me, pet me! HSSSSSS!")
 // }
+
+// =======================
+// Find the Median
+// =======================
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]
+
+// Find the median number in the following numsarray, then console.log that number.
+nums.sort() 
+let median = Math.floor(nums.length / 2)
+console.log(nums[median])
