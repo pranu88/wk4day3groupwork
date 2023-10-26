@@ -107,3 +107,22 @@ As a developer, you'll be a lifelong learner and constantly encountering new thi
 // console.log(halfMovies)
 
 // console.log(halfMovies.indexOf('Fast and Furious'))
+
+// ========================
+// Where is Waldo
+// ========================
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// 1.Remove Eggbert (hint look at the slice/splice method(s))
+whereIsWaldo.splice(1,1)     //removed eggbert here indexs changed now onwords
+// console.log(whereIsWaldo)
+// 2.Change "Neff" to "No One"
+whereIsWaldo[1].splice(2,1,"No One")
+console.log(whereIsWaldo)
+// 3.Access and console.log "Waldo"
+console.log(whereIsWaldo[2][1][1])
+
+    
