@@ -57,7 +57,53 @@ Create an array with the members of the ninja turtles (Donatello, Leonardo, Raph
 Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
 As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
 */
-const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
-for(let turtle of ninjaTurtles){
-console.log(turtle.toUpperCase())
-}
+// const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+// for(let turtle of ninjaTurtles){
+// console.log(turtle.toUpperCase())
+// }
+
+// =====================
+// Methods, Revisited
+// =====================
+// Console log: the index of Titanic
+ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious']
+// console.log(favMovies.indexOf('Titanic'))
+// 
+// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+// console.log(favMovies.sort()) //array is permanently changed.
+// Use the method pop
+// favMovies.pop()
+// console.log(favMovies)
+// push"Guardians of the Galaxy"
+// favMovies.push("Guardians of the Galaxy")
+// console.log(favMovies)
+// Reverse the array
+// favMovies.reverse()
+// console.log(favMovies)
+
+// Use the shiftmethod
+// favMovies.shift()
+// console.log(favMovies)
+
+// unshift- what does it return?
+// favMovies.unshift("Rat Race")
+// console.log(favMovies)
+
+// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+
+// let getIndex = favMovies.indexOf('Django Unchained')
+// console.log(favMovies.splice(getIndex,1,"Avatar"))
+// console.log(favMovies)
+
+/*slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+*/
+
+// let getHalf = Math.floor(favMovies.lenght) / 2
+// // console.log(favMovies.slice(getHalf, favMovies.length - 1))
+
+
+// // 9. 
+// const halfMovies = favMovies.slice(getHalf)
+// console.log(halfMovies)
+
+// console.log(halfMovies.indexOf('Fast and Furious'))
